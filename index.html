@@ -1,0 +1,181 @@
+<<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pour mon amour ❤️</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-family: Arial, sans-serif;
+
+            background: linear-gradient(135deg, #ff758c, #ff7eb3);
+
+            color: white;
+            text-align: center;
+        }
+
+        .carte {
+            width: 90%;
+            max-width: 550px;
+
+            padding: 45px 25px;
+
+            background: rgba(255, 255, 255, 0.15);
+
+            border-radius: 30px;
+
+            backdrop-filter: blur(10px);
+
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+        }
+
+        .coeur {
+            font-size: 70px;
+
+            animation: battre 1s infinite;
+        }
+
+        /* PRÉNOM */
+
+        .nom {
+            font-size: 65px;
+            margin: 10px 0 0;
+
+            font-weight: bold;
+
+            text-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+        }
+
+        /* BONJOUR */
+
+        h1 {
+            font-size: 42px;
+            margin: 5px 0 20px;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 1.6;
+        }
+
+        button {
+            margin-top: 20px;
+
+            padding: 15px 30px;
+
+            border: none;
+            border-radius: 30px;
+
+            background: white;
+            color: #ff4f81;
+
+            font-size: 18px;
+            font-weight: bold;
+
+            cursor: pointer;
+
+            transition: 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.08);
+        }
+
+        #message {
+            display: none;
+            margin-top: 25px;
+        }
+
+        #message p {
+            font-size: 19px;
+        }
+
+        @keyframes battre {
+
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.2);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="carte">
+
+        <div class="coeur">❤️</div>
+
+        <!-- INA -->
+        <div class="nom">INA ❤️</div>
+
+        <!-- BONJOUR -->
+        <h1>Bonjour 👋</h1>
+
+        <p>
+            J'ai créé quelque chose spécialement pour toi...
+        </p>
+
+        <p>
+            Parce que certaines personnes méritent
+            bien plus qu'un simple message. ❤️
+        </p>
+
+        <button onclick="afficherMessage()">
+            Clique ici ❤️
+        </button>
+
+        <div id="message">
+
+            <p>
+                Peu importe le temps qui passe,
+                je veux continuer à écrire notre histoire
+                avec toi. ❤️
+            </p>
+
+            <p>
+                Merci d'être dans ma vie. 🥹
+            </p>
+
+            <p>
+                Je t'aime. ❤️
+            </p>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        function afficherMessage() {
+
+            document.getElementById("message").style.display = "block";
+
+        }
+
+    </script>
+
+</body>
+
+</html>
